@@ -1,9 +1,227 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Hello</title>
-  </head>
-  <body>
-    <h1>Hello World</h1>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="GraspGen: A Diffusion-based Framework for 6-DOF Grasping">
+  <meta name="keywords" content="GraspGen, grasping">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GraspGen: A Diffusion-based Framework for 6-DOF Grasping</title>
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">GraspGen: A Diffusion-based Framework for 6-DOF Grasping</h1>
+
+
+          <br>  
+          <section class="hero teaser">
+            <div class="container is-max-desktop">
+              <div class="hero-body">
+                <img
+                src="static/images/cover_c.png" style="height:250px">
+              </div>
+            </div>
+          </section>
+
+          <div class="is-size-5 publication-authors">
+
+            <span class="author-block">
+              <a href="http://adithyamurali.com">Adithya Murali</a> &nbsp;
+            </span>
+            <span class="author-block">
+              <a href="https://balakumar-s.github.io/">Balakumar Sundaralingam</a> &nbsp;
+            </span>
+            <span class="author-block">
+              <a href="https://research.nvidia.com/person/yu-wei-chao">Yu-Wei Chao</a> &nbsp;
+            </span>
+            <span class="author-block">
+              <a href="https://wentaoyuan.github.io/">Wentao Yuan</a> &nbsp;
+            </span>
+            <span class="author-block">
+              <a href="https://junjungoal.github.io/">Jun Yamada</a> &nbsp;
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/marktcarlson/">Mark Carlson</a> &nbsp;
+            </span>
+            <span class="author-block">
+              <a href="https://fabioramos.github.io/Home.html">Fabio Ramos</a> &nbsp;
+            </span>
+            <span class="author-block">
+              <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a> &nbsp;
+            </span>
+            <span class="author-block">
+              <a href="https://clemense.github.io">Clemens Eppner</a> &nbsp;
+            </span>
+
+          </div>
+
+          <br>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><a href="https://research.nvidia.com/research-area/robotics"><b><img
+                    src="static/images/nvidia.svg" style="height:40px"></b></a></span>
+          </div>
+
+          <!-- <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>NVIDIA,</span>
+            <span class="author-block"><sup>2</sup>University of Washington</span>
+          </div> -->
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://graspgen.github.io/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>project page</span>
+                </a>
+              </span>
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2304.09302"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>arxiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://youtu.be/gM5fgK2aZ1Y"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/NVlabs/GraspGen"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <center>
+      <video id="dollyzoom" autoplay muted loop playsinline>
+        <source src="./static/videos/teaser.mp4"
+                type="video/mp4">
+      </video>
+    </center>
+    </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Grasping is a fundamental robot skill, yet despite significant research advancements, learning-based 6-DOF grasping approaches are still not turnkey and struggle to generalize across different embodiments and in-the-wild settings. We build upon the recent success on modeling the object-centric grasp generation process as an iterative diffusion process. Our proposed framework - GraspGen - consists of a Diffusion-Transformer architecture that enhances grasp generation, paired with an efficient discriminator to score and filter  sampled grasps. We introduce a novel and performant on-generator training recipe for the discriminator. To scale GraspGen to both objects and grippers, we release a new simulated dataset consisting of over 57 million grasps. We demonstrate that GraspGen outperforms prior methods in simulations with singulated objects across different grippers, achieves state-of-the-art performance on the FetchBench grasping benchmark, and performs well on a real robot with noisy visual observations.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</section>
+<!-- https://www.youtube.com/watch?v=gM5fgK2aZ1Y&feature=youtu.be -->
+<!-- Paper video. -->
+<section class="section">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Supplementary Video</h2>
+      <div class="publication-video">
+      <iframe src="https://www.youtube.com/embed/gM5fgK2aZ1Y?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ Paper video. -->
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{murali2025graspgen,
+      title={GraspGen: A Diffusion-based Framework for 6-DOF Grasping},
+      author={Adithyavairavan Murali, Balakumar Sundaralingam, Yu-Wei Chao, Jun Yamada, Wentao Yuan, Mark Carlson, Fabio Ramos, Dieter Fox, Clemens Eppner},
+      year={2025},
+      eprint={TODO},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={TODO},
+}
+</code></pre>
+  </div>
+</section>
+
+<div class="container">
+  <div class="columns is-centered">
+    <div class="column is-8">
+      <div class="content">
+        <p>
+          This website is made from the template from <a
+            href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
 </html>
