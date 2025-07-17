@@ -83,6 +83,9 @@
               <a href="https://fabioramos.github.io/Home.html">Fabio Ramos</a> &nbsp;
             </span>
             <span class="author-block">
+              <a href="https://research.nvidia.com/person/stan-birchfield">Stan Birchfield</a> &nbsp;
+            </span>
+            <span class="author-block">
               <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a> &nbsp;
             </span>
             <span class="author-block">
@@ -155,18 +158,116 @@
 <section class="section">
   <div class="container is-max-desktop">
     <center>
+
+      <div class="content has-text-centered">
+        <h3 class="title is-4">Sim2Real Transfer to the Real Robot</h3>
       <video id="dollyzoom" autoplay muted loop playsinline>
-        <source src="./static/videos/teaser.mp4"
+        <source src="./static/videos/realrobot_c.mp4"
+                type="video/mp4">
+      </video>
+      </div>
+    </center>
+    </div>
+</section>
+
+
+<!-- Robot demos -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+
+      <div class="column">
+        <div class="content has-text-centered">
+          <h3 class="title is-4">Multi-Embodiment Generalization + Grasp Data Generation</h3>
+
+          <p>
+          Left to Right: Object-only, Object + Robotiq-2f-140 grasps, Franka Panda, Suction gripper
+          </p>
+
+        <video id="dollyzoom" autoplay controls muted loop playsinline width="23%">
+          <source src="./static/videos/datagen_1_c.mp4"
+                  type="video/mp4">
+        </video>
+
+        <video id="dollyzoom" autoplay controls muted loop playsinline width="23%">
+          <source src="./static/videos/datagen_2_c.mp4"
+                  type="video/mp4">
+        </video>
+
+        <video id="dollyzoom" autoplay controls muted loop playsinline width="23%">
+          <source src="./static/videos/datagen_3_c.mp4"
+                  type="video/mp4">
+        </video>
+
+        <video id="dollyzoom" autoplay controls muted loop playsinline width="23%">
+          <source src="./static/videos/datagen_4_c.mp4"
+                  type="video/mp4">
+        </video>
+
+        <br>
+
+        </div>
+      </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <center>
+      <h3 class="title is-4">SOTA on FetchBench [Han et. al. CoRL 2024] Grasping Benchmark in Isaac Sim</h3>
+      <video id="dollyzoom" autoplay muted loop playsinline>
+        <source src="./static/videos/fetchbench_c.mp4"
                 type="video/mp4">
       </video>
     </center>
     </div>
 </section>
 
+<!-- Dataset -->
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <!-- Synthetic Data. -->
+      <div class="column">
+        <div class="content has-text-centered">
+          <h3 class="title is-4">GraspGen is a Diffusion-based Model</h3>
+          <p>
+            GraspGen models grasp generation as a iterative Denoising Diffusion Probabilistic Model (DDPM) process.
+          </p>
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/diffusion.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ Synthetic data. -->
+
+      <!-- Collision Queries. -->
+      <div class="column">
+        <div class="content has-text-centered">
+          <h3 class="title is-4">Realtime Grasp Predictions</h3>
+          <div class="columns is-centered">
+            <div class="column content">
+            <p>
+             Inference is realtime (~20 Hz before TensorRT), 21X less memory than prior work on grasp discriminators
+            </p>
+
+            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/realtime_tracking_c.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Collision. -->
+  </div>
+</section>
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
@@ -184,7 +285,7 @@
 <section class="section">
   <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
-      <h2 class="title is-3">Supplementary Video</h2>
+      <h2 class="title is-3">Project Video</h2>
       <div class="publication-video">
       <iframe src="https://www.youtube.com/embed/gM5fgK2aZ1Y?rel=0&amp;showinfo=0"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -199,7 +300,7 @@
     <h2 class="title">BibTeX</h2>
     <pre><code>@misc{murali2025graspgen,
       title={GraspGen: A Diffusion-based Framework for 6-DOF Grasping},
-      author={Adithyavairavan Murali, Balakumar Sundaralingam, Yu-Wei Chao, Jun Yamada, Wentao Yuan, Mark Carlson, Fabio Ramos, Dieter Fox, Clemens Eppner},
+      author={Adithyavairavan Murali, Balakumar Sundaralingam, Yu-Wei Chao, Jun Yamada, Wentao Yuan, Mark Carlson, Fabio Ramos, Stan Birchfield, Dieter Fox, Clemens Eppner},
       year={2025},
       eprint={TODO},
       archivePrefix={arXiv},
